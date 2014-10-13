@@ -99,7 +99,7 @@ meanFreq", "Freq-GyroBodyBody-Jerk-Mag-Mean", "Freq-GyroBodyBody-Jerk-Mag-Std", 
 
 # Step 5: Create an independent tidy data set with average of each variable for each activity and subject
 #	First identify variables required for grouping, and those not required	
-#	Then, Subsetting the data set appropriately, arrange the data set in order of Subjects, converting them to factors
+#	Then, Subsetting the data set appropriately, aggregating the data, arranging the data set in order of Subjects, and converting Subject data to factors
 
 groupingCols <- grepl("Subject|Activity", names(newDataset))
 tidyDataset <- aggregate(x = newDataset[,!groupingCols], by = as.list(newDataset[,groupingCols]), FUN = mean)
