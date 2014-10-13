@@ -19,17 +19,22 @@ The purpose of this project is to extract data pertaining to Human activities as
 
 The data in question is named the *Human Activity Recognition data set*, and can be obtained from any of the following links: 
 - [UCL Machine Learning Repository](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
-- [Zip file Direct Download](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) link.
+- [Zip file Direct Download](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 
-### 2. Prepare Data for Manipulation ###
+### 2. Understanding the Data ###
+
+
+
+
+### 3. Prepare Data for Manipulation ###
 
 The data downloaded has to be placed in R's working directory for a user. To check which directory is the working directory, the R code ```getwd()``` can be executed. This will display the working directory, in which the folder named *UCI HAR Dataset* (which is obtained by unzipping the original downloaded file) has to be copied.
 
 Once the folder is copied, the script to manipulate the data set can be run.
 
 
-### 3. Run the run_analysis.R script ###
+### 4. Run the run_analysis.R script ###
 
 After successfully placing our downloaded data set in our working directory, the file present in this repository, titled *run_analysis.R* can be copied and run.
 
