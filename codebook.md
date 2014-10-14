@@ -3,7 +3,7 @@ Codebook
 
 ## Data set Description ##
 
-The Human Activity Recognition data set was generated as a result of an experiment involving 30 participants (labelled in the data set as *Subjects*, each performing the following 6 activities:
+The Human Activity Recognition data set was generated as a result of an experiment involving 30 participants (labelled in the data set as *Subjects*), each performing the following 6 activities:
 - Walking
 - Walking Upstairs
 - Walking Downstairs
