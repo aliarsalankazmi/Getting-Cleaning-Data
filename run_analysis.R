@@ -55,44 +55,38 @@ newDataset <- fullDataset[, colInd]
 
 # Step 3: Use descriptive names for activities
 
-newDataset$Activities <- factor(newDataset$Activities, labels = c("Walking", "Walking_Upstairs", "Walking_Downstairs", "Sitting", "Standing", "Laying"))
+newDataset$Activities <- factor(newDataset$Activities, labels = c("Walking", "Walking_Upstairs", "Walking_Downstairs", 
+"Sitting", "Standing", "Laying"))
 
 
 
 
 # Step 4: Label data set variables with descriptive names
 
-colnames(newDataset) <- c("Subject", "Activity", "Time-AccBody-X-Mean", "Time-AccBody-Y-Mean", "Time-AccBody-Z-Mean", "Time-AccBody-X-Std", "Time-AccBody-Y-Std", 
+colnames(newDataset) <- c("Subject", "Activity", "Time-AccelBody-X-Mean", "Time-AccelBody-Y-Mean", "Time-AccelBody-Z-Mean", 
+"Time-AccelBody-X-Std", "Time-AccelBody-Y-Std", "Time-AccelBody-Z-Std", "Time-AccelGravity-X-Mean", "Time-AccelGravity-Y-Mean",
+"Time-AccelGravity-Z-Mean", "Time-AccelGravity-X-Std", "Time-AccelGravity-Y-Std", "Time-AccelGravity-Z-Std", 
+"Time-AccelBody-Jerk-X-Mean", "Time-AccelBody-Jerk-Y-Mean", "Time-AccelBody-Jerk-Z-Mean", "Time-AccelBody-Jerk-X-Std", 
+"Time-AccelBody-Jerk-Y-Std", "Time-AccelBody-Jerk-Z-Std", "Time-GyroBody-X-mean", "Time-GyroBody-Y-Mean", 
+"Time-GyroBody-Z-Mean", "Time-GyroBody-X-Std", "Time-GyroBody-Y-Std", "Time-GyroBody-Z-Std", "Time-GyroBody-Jerk-X-Mean",
+"Time-GyroBody-Jerk-Y-Mean", "Time-GyroBody-Jerk-Z-Mean", "Time-GyroBody-Jerk-X-Std", "Time-GyroBody-Jerk-Y-Std", 
+"Time-GyroBody-Jerk-Z-Std", "Time-AccelBody-Mag-Mean", "Time-AccelBody-Mag-Std", "Time-AccelGravity-Mag-Mean",
+"Time-AccelGravity-Mag-Std", "Time-AccelBody-Jerk-Mag-Mean", "Time-AccelBody-Jerk-Mag-Std", "Time-GyroBody-Mag-Mean",
+"Time-GyroBody-Mag-Std", "Time-GyroBody-Jerk-Mag-Mean", "Time-GyroBody-Jerk-Mag-Std", "Freq-AccelBody-X-Mean",
+"Freq-AccelBody-Y-Mean", "Freq-AccelBody-Z-Mean", "Freq-AccelBody-X-Std", "Freq-AccelBody-Y-Std", "Freq-AccelBody-Z-Std",
+"Freq-AccelBody-meanFreq-X", "Freq-AccelBody-meanFreq-Y", "Freq-AccelBody-meanFreq-Z", "Freq-AccelBody-Jerk-X-Mean",
+"Freq-AccelBody-Jerk-Y-Mean", "Freq-AccelBody-Jerk-Z-Mean", "Freq-AccelBody-Jerk-X-Std", "Freq-AccelBody-Jerk-Y-Std"
+, "Freq-AccelBody-Jerk-Z-Std", "Freq-AccelBody-Jerk-meanFreq-X", "Freq-AccelBody-Jerk-meanFreq-Y", "Freq-AccelBody-Jerk-meanFreq-Z",
+"Freq-GyroBody-X-Mean", "Freq-GyroBody-Y-Mean", "Freq-GyroBody-Z-Mean", "Freq-GyroBody-X-Std", "Freq-GyroBody-Y-Std", 
+"Freq-GyroBody-Z-Std", "Freq-GyroBody-meanFreq-X", "Freq-GyroBody-meanFreq-Y", "Freq-GyroBody-meanFreq-Z", "Freq-AccelBody-Mag-Mean",
+"Freq-AccelBody-Mag-Std", "Freq-AccelBody-Mag-meanFreq", "FreqAccelBodyBody-Jerk-Mag-Mean", "Freq-AccelBodyBody-Jerk-Mag-Std",
+"Freq-AccelBodyBody-Jerk-Mag-meanFreq", "Freq-GyroBodyBody-Mag-Mean", "Freq-GyroBodyBody-Mag-Std", "Freq-GyroBodyBody-Mag-meanFreq",
+"Freq-GyroBodyBody-Jerk-Mag-Mean", "Freq-GyroBodyBody-Jerk-Mag-Std", "Freq-GyroBodyBody-Jerk-Mag-meanFreq", 
+"angle(Time-AccelBody-Mean,Gravity)", "angle(Time-AccelBody-Jerk-Mean, gravityMean)", "angle(Time-GyroBody-Mean, gravityMean)",
+"angle(Time-GyroBody-Jerk-Mean, gravityMean)", "angle(X, gravityMean)", "angle(Y, gravityMean)", "angle(Z, gravityMean)")
 
-"Time-AccBody-Z-Std", "Time-AccGravity-X-Mean", "Time-AccGravity-Y-Mean", "Time-AccGravity-Z-Mean", "Time-AccGravity-X-Std", "Time-AccGravity-Y-Std", "Time-
 
-AccGravity-Z-Std", "Time-AccBody-Jerk-X-Mean", "Time-AccBody-Jerk-Y-Mean", "Time-AccBody-Jerk-Z-Mean", "Time-AccBody-Jerk-X-Std", "Time-AccBody-Jerk-Y-Std", 
 
-"Time-AccBody-Jerk-Z-Std", "Time-GyroBody-X-mean", "Time-GyroBody-Y-Mean", "Time-GyroBody-Z-Mean", "Time-GyroBody-X-Std", "Time-GyroBody-Y-Std", "Time-GyroBody-
-
-Z-Std", "Time-GyroBody-Jerk-X-Mean", "Time-GyroBody-Jerk-Y-Mean", "Time-GyroBody-Jerk-Z-Mean", "Time-GyroBody-Jerk-X-Std", "Time-GyroBody-Jerk-Y-Std", "Time-
-
-GyroBody-Jerk-Z-Std", "Time-AccBody-Mag-Mean", "Time-AccBody-Mag-Std", "Time-AccGravity-Mag-Mean", "Time-AccGravity-Mag-Std", "Time-AccBody-Jerk-Mag-Mean", 
-
-"Time-AccBody-Jerk-Mag-Std", "Time-GyroBody-Mag-Mean", "Time-GyroBody-Mag-Std", "Time-GyroBody-Jerk-Mag-Mean", "Time-GyroBody-Jerk-Mag-Std", "Freq-AccBody-X-
-
-Mean", "Freq-AccBody-Y-Mean", "Freq-AccBody-Z-Mean", "Freq-AccBody-X-Std", "Freq-AccBody-Y-Std", "Freq-AccBody-Z-Std", "Freq-AccBody-meanFreq-X", "Freq-AccBody-
-
-meanFreq-Y", "Freq-AccBody-meanFreq-Z", "Freq-AccBody-Jerk-X-Mean", "Freq-AccBody-Jerk-Y-Mean", "Freq-AccBody-Jerk-Z-Mean", "Freq-AccBody-Jerk-X-Std", "Freq-
-
-AccBody-Jerk-Y-Std", "Freq-AccBody-Jerk-Z-Std", "Freq-AccBody-Jerk-meanFreq-X", "Freq-AccBody-Jerk-meanFreq-Y", "Freq-AccBody-Jerk-meanFreq-Z", "Freq-GyroBody-
-
-X-Mean", "Freq-GyroBody-Y-Mean", "Freq-GyroBody-Z-Mean", "Freq-GyroBody-X-Std", "Freq-GyroBody-Y-Std", "Freq-GyroBody-Z-Std", "Freq-GyroBody-meanFreq-X", "Freq-
-
-GyroBody-meanFreq-Y", "Freq-GyroBody-meanFreq-Z", "Freq-AccBody-Mag-Mean", "Freq-AccBody-Mag-Std", "Freq-AccBody-Mag-meanFreq", "FreqAccBodyBody-Jerk-Mag-Mean", 
-
-"Freq-AccBodyBody-Jerk-Mag-Std", "Freq-AccBodyBody-Jerk-Mag-meanFreq", "Freq-GyroBodyBody-Mag-Mean", "Freq-GyroBodyBody-Mag-Std", "Freq-GyroBodyBody-Mag-
-
-meanFreq", "Freq-GyroBodyBody-Jerk-Mag-Mean", "Freq-GyroBodyBody-Jerk-Mag-Std", "Freq-GyroBodyBody-Jerk-Mag-meanFreq", "angle(Time-AccBody-Mean,Gravity)", 
-
-"angle(Time-AccBody-Jerk-Mean, gravityMean)", "angle(Time-GyroBody-Mean, gravityMean)", "angle(Time-GyroBody-Jerk-Mean, gravityMean)", "angle(X, gravityMean)", 
-
-"angle(Y, gravityMean)", "angle(Z, gravityMean)")
 
 
 
