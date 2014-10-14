@@ -84,7 +84,7 @@ colnames(newDataset) <- c("Subject", "Activity", "Time-AccelBody-X-Mean", "Time-
 "Freq-GyroBodyBody-Jerk-Mag-Mean", "Freq-GyroBodyBody-Jerk-Mag-Std", "Freq-GyroBodyBody-Jerk-Mag-meanFreq", 
 "angle(Time-AccelBody-Mean,Gravity)", "angle(Time-AccelBody-Jerk-Mean, gravityMean)", "angle(Time-GyroBody-Mean, gravityMean)",
 "angle(Time-GyroBody-Jerk-Mean, gravityMean)", "angle(X, gravityMean)", "angle(Y, gravityMean)", "angle(Z, gravityMean)")
-
+colnames(newDataset) <- gsub("-", "\\.", colnames(newDataset))
 
 
 
