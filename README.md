@@ -22,7 +22,7 @@ The data in question is named the *Human Activity Recognition data set*, and can
 
 ### 2. Understanding the Data ###
 
-
+To understand what data is being used for Human Activity Recognition, and any variables used therein, the [Codebook](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md) file has been provided.
 
 
 ### 3. Prepare Data for Manipulation ###
@@ -33,5 +33,5 @@ Once the folder is copied, the script to manipulate the data set can be run.
 
 ### 4. Run the run_analysis.R script ###
 
-After successfully placing our downloaded data set in our working directory, the file present in this repository, titled *run_analysis.R*, can be copied to an ```R``` console and at once run completely.
+After successfully placing our downloaded data set in our working directory, the file present in this repository, titled [*run_analysis.R*](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/run_analysis.R), can be copied to an ```R``` console and at once run completely.
 This script will manipulate our data set and produce a tidied version, also generating an output of this data set to the **working directory**.
