@@ -82,9 +82,9 @@ colnames(newDataset) <- c("Subject", "Activity", "Time-AccelBody-X-Mean", "Time-
 "Freq-AccelBody-Mag-Std", "Freq-AccelBody-Mag-meanFreq", "FreqAccelBodyBody-Jerk-Mag-Mean", "Freq-AccelBodyBody-Jerk-Mag-Std",
 "Freq-AccelBodyBody-Jerk-Mag-meanFreq", "Freq-GyroBodyBody-Mag-Mean", "Freq-GyroBodyBody-Mag-Std",
 "Freq-GyroBodyBody-Mag-meanFreq", "Freq-GyroBodyBody-Jerk-Mag-Mean", "Freq-GyroBodyBody-Jerk-Mag-Std",
-"Freq-GyroBodyBody-Jerk-Mag-meanFreq", "Time-Angle-AccelBodyMean-Gravity)", "Time-Angle-AccelBodyJerkMean-GravityMean)",
-"Time-Angle-GyroBodyMean-GravityMean", "Time-Angle-GyroBodyJerkMean-GravityMean", "Angle-X-GravityMean)", 
-"Angle-Y-GravityMean)", "Angle-Z-GravityMean")
+"Freq-GyroBodyBody-Jerk-Mag-meanFreq", "Time-Angle-AccelBodyMean-Gravity", "Time-Angle-AccelBodyJerkMean-GravityMean",
+"Time-Angle-GyroBodyMean-GravityMean", "Time-Angle-GyroBodyJerkMean-GravityMean", "Angle-X-GravityMean", 
+"Angle-Y-GravityMean", "Angle-Z-GravityMean")
 colnames(newDataset) <- gsub("-", "\\.", colnames(newDataset))
 
 
