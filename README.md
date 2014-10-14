@@ -25,13 +25,13 @@ The data in question is named the *Human Activity Recognition data set*, and can
 To understand what data is being used for Human Activity Recognition, and any variables used therein, the [Codebook](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md) file has been provided.
 
 
-### 3. Prepare Data for Manipulation ###
+### 3. Preparing Data for Manipulation ###
 
 The data downloaded has to be placed in R's working directory for a user. To check which directory is the working directory, the R code ```getwd()``` can be executed. This will display the working directory, in which the folder named *UCI HAR Dataset* (which is obtained by unzipping the original downloaded file) has to be copied.
 Once the folder is copied, the script to manipulate the data set can be run.
 
 
-### 4. Run the run_analysis.R script ###
+### 4. Running the run_analysis.R script ###
 
 After successfully placing our downloaded data set in our working directory, the file [run_analysis.R](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/run_analysis.R), can be copied to an ```R``` console and at once run completely.
 This script will manipulate our data set and produce a tidied version, also generating an output of this data set to the **working directory**.
