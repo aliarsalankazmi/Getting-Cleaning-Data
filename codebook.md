@@ -23,3 +23,5 @@ In the current data set, such measurements have been recorded over 3 axes, and i
 ## Variable Description ##
 
 In the previous section, two devices were briefly covered (an accelerometer and a gyroscope) that were used to generate sensor signals for 6 activities performed by participants. Since our data set has been derived from sensor signals produced by these devices, it is appropriate to discuss our data variables in context of the two devices.
+
+![Data Overview](https://www.dropbox.com/s/1gy2u6l9orcjphu/dataOverview.PNG?dl=0 "Overview of Data set")
