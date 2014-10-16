@@ -62,10 +62,10 @@ The following table lists and explains all variables present in the data set. To
 Users who may wish to look up a variable seen in the data set may use the ```Find``` function by pressing ```CTRL + F```, and entering the name of a variable *without including the axis name for which the variable shows data*.   
 For example, entering ```tBodyAcc-mean()``` and **not** ```tBodyAcc-mean()-X```. This is important because although variables are named in the data set as ```tBodyAcc-mean()-X```, the table below combines all axes into a single variable to reduce repetition.
 
-| Index | Variable name | Parent Category | Child Variable(s) | Variable Description | Unit | Function(s) applied |
+| Index | Variable name | Source | Axes Used | Variable Description | Unit | Function(s) applied |
 |-------|---------------|-----------------|-------------------|----------------------|------|---------------------|
 | 1     | Subjects       | NA              | NA               | Each participant is referred to as a Subject, 30 in total | NA | NA
-| 2     | Activity       | NA              | NA               | Each of the 6 activities is recorded here, using a numeric value (from 1 - 6) | NA | NA |
+| 2     | Activity       | NA              | NA               | Each of the 6 activities is recorded here, using a numeric value (1 is Walking, 2 is Walking Upstairs, 3 is Walking Downstairs, 4 is Sitting, 5 is Standing, 6 is Laying  | NA | NA |
 | 3     | tBodyAcc-mean() | Time; Acceleration | X; Y; Z          | This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable | g (1g = 9.8 m/s^2) | mean() = Mean |
 | 4     | tBodyAcc-std() | Time; Acceleration | X; Y; Z          | This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable | g (1g = 9.8 m/s^2) | std() = Standard Deviation |
 | 5      | tBodyAcc-mad() | Time; Acceleration | X; Y; Z          | This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable | g (1g = 9.8 m/s^2) | mad() = Median Absolute Deviation |
