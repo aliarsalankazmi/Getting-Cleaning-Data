@@ -11,30 +11,33 @@ The Human Activity Recognition data set was generated as a result of an experime
 - Standing
 - Laying
 
-As the participants performed the aforementioned activities, a smartphone (Samsung Galaxy S II) tied to the waist of each participant recorded sensor signals for various metrics, using its embedded [Accelerometer](http://en.wikipedia.org/wiki/Accelerometer) and [Gyroscope](http://en.wikipedia.org/wiki/Gyroscope). An accelerometer is an inertial sensor that measures acceleration by making use of an Inertial or Fictitious force; A gyroscope is a mechanical device that measures orientation and angular velocity, using Earth's gravity. When combined, accelerometers and gyroscopes can be used for a full 6 Degree of Freedom motion tracking system. Also, accelerometers and gyroscopes can take measurements over 1, 2, or 3 axes, depending upon requirements. 
-In our data set, such measurements have been recorded over 3 axes, and in total, the data set contains 563 variables over 10299 records. The variables have been explained in the [Variable Description section](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description), below.
+As the participants performed the aforementioned activities, a smartphone (Samsung Galaxy S II) tied to the waist of each participant recorded sensor signals for various metrics, using its embedded [Accelerometer](http://en.wikipedia.org/wiki/Accelerometer) and [Gyroscope](http://en.wikipedia.org/wiki/Gyroscope). An accelerometer is an inertial sensor that measures acceleration by making use of an Inertial or Fictitious force; A gyroscope is a mechanical device that measures orientation and angular velocity, using Earth's gravity.  
+When combined, accelerometers and gyroscopes can be used for a full 6 Degree of Freedom motion tracking system. In addition, accelerometers and gyroscopes can take measurements over 1, 2, or 3 axes, where selection of 2 axes enable collection of data over 2 dimensions, while a choice of 3 axes provide data over 3 dimensions. In the Human Activity Recognition data set, measurements have been recorded over 3 axes. In total, the data set contains 563 variables over 10299 records. These variables have been explained in the [Variable Description section](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description), below.
 
 *Resources for further learning:*
-- *[Accelerometer in moderate depth](http://www.sensorwiki.org/doku.php/sensors/accelerometer)*
-- *[Gyroscope in moderate depth](www.sensorwiki.org/doku.php/sensors/gyroscope)*
-- *[Accelerometer and Gyroscope in depth](http://www.instructables.com/id/Accelerometer-Gyro-Tutorial/?ALLSTEPS)*
+- *[Sensor wiki entry for Accelerometers](http://www.sensorwiki.org/doku.php/sensors/accelerometer)*
+- *[Sensor wiki entry for Gyroscopes](www.sensorwiki.org/doku.php/sensors/gyroscope)*
+- *[How Accelerometers and Gyroscopes work - In Depth](http://www.instructables.com/id/Accelerometer-Gyro-Tutorial/?ALLSTEPS)*
 
 
 ## Variable Description ##
 
 In the previous section, two devices were briefly covered (an accelerometer and a gyroscope) that were used to generate sensor signals for 6 activities performed by participants. Since our data set has been derived from sensor signals produced by these devices, it is appropriate to discuss our data variables in context of the two devices.
 
+### The Variable Generation process ###
+
 ![Data Overview](https://cloud.githubusercontent.com/assets/5294000/4641659/141d636e-543b-11e4-8aa5-123f58e981e1.PNG "Overview of Data set")
 
-The flow diagram above tries to represent the data set as a hierarchical structure, in order to facilitate understanding of it. To explain the variable generation process more specifically:
-- Raw signals from an accelerometer and a gyroscope were generated
-- The raw signals were **Time-domain** signals (captured at a constant rate of 50 Hz), and to some of these signals a Fast Fourier Transformation was applied to generate **Frequency-domain** signals.
-- The Time-domain signals from an *accelerometer* comprised of **Tri-axial Acceleration signals**, which were partitioned into **Body acceleration** and **Gravity acceleration** signals using a low-pass Butterworth filter with a corner frequency of 0.3 Hz. These signals are measured in the g, where 1g =  9.8 m/s^2.
-- The Time-domain signals from a *gyroscope* comprised of signals measuring the rotational velocity of a body. These signals are measured in deg/sec.
-- The body acceleration and angular velocity were used to derive **Jerk** signals.
-- The **Magnitude** value of certain signals was also calculated by using the Euclidean norm.
-- **Frequency-domain** signals, as derived by applying a Fast Fourier Transformation, were generated for only some of the signals from Time-domain. These include Body acceleration, Body acceleration Magnitude, Body acceleration Jerk, Body acceleration Jerk Magnitude, Gyroscope Body and Gyroscope Body Jerk Magnitude signals.
-- Where applicable, the following functions to the aforementioned variables were applied to generate the final set of variables:
+The flow diagram above tries to represent the data set as a hierarchical structure, in order to facilitate understanding of it. To explain the variable generation process specifically:
+
+1. Raw signals from an accelerometer and a gyroscope were generated,
+2. The raw signals were **Time-domain** signals (captured at a constant rate of 50 Hz), and to some of these signals a Fast Fourier Transformation was applied to generate **Frequency-domain** signals,
+3. The Time-domain signals from an *accelerometer* comprised of **Tri-axial Acceleration signals**, which were partitioned into **Body acceleration** and **Gravity acceleration** signals using a low-pass Butterworth filter with a corner frequency of 0.3 Hz *(These signals are measured in the g, where 1g =  9.8 m/s^2)*.
+4. The Time-domain signals from a *gyroscope* comprised of signals measuring the rotational velocity of a body *(These signals are measured in deg/sec)*.
+5. The body acceleration and angular velocity were used to derive **Jerk** signals.
+6. The **Magnitude** for certain signals was calculated by using the Euclidean norm.
+7. **Frequency-domain** signals, as derived by applying a *Fast Fourier Transformation*, were generated for only some of the signals from Time-domain. These include Body acceleration, Body acceleration Magnitude, Body acceleration Jerk, Body acceleration Jerk Magnitude, Gyroscope Body and Gyroscope Body Jerk Magnitude signals.
+8. Where applicable, the following functions to the aforementioned variables were applied to generate the final set of variables:
     - Mean
     - Std: Standard Deviation
     - Median Absolute Deviation
@@ -52,6 +55,8 @@ The flow diagram above tries to represent the data set as a hierarchical structu
     - Kurtosis: Kurtosis of the frequency domain signal
     - BandsEnergy: Energy of a frequency interval within the 64 bins of the Fast Fourier Transformation of each window
     - Angle: Angle between two vectors
+
+
 
 The following table explains the variables present in our data set while also categorising them to facilitate understanding, in the same manner as depicted in our flow diagram. They are arranged in the same order as present in the data set.
 
