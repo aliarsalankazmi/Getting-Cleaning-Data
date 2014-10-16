@@ -29,9 +29,9 @@ In the previous section, two devices were briefly covered (an accelerometer and 
 The flow diagram above tries to represent the data set as a hierarchical structure, in order to facilitate understanding of it. To explain the variable generation process more specifically:
 - Raw signals from an accelerometer and a gyroscope were generated
 - The raw signals were **Time-domain** signals (captured at a constant rate of 50 Hz), and to some of these signals a Fast Fourier Transformation was applied to generate **Frequency-domain** signals.
-- The Time-domain signals from an accelerometer comprised of **Tri-axial Acceleration signals**, which were partitioned into **Body acceleration** and **Gravity acceleration** signals using a low-pass Butterworth filter with a corner frequency of 0.3 Hz. These signals are represented in the unit g, which is defined as 9.8 m/s^2.
-- The Time-domain signals from a gyroscope comprised of signals that measured the rotational velocity of a body. These signals are represented in the unit deg/sec.
-- The body acceleration and angular velocity were used to generate **Jerk** signals.
+- The Time-domain signals from an *accelerometer* comprised of **Tri-axial Acceleration signals**, which were partitioned into **Body acceleration** and **Gravity acceleration** signals using a low-pass Butterworth filter with a corner frequency of 0.3 Hz. These signals are measured in the g, where 1g =  9.8 m/s^2.
+- The Time-domain signals from a *gyroscope* comprised of signals measuring the rotational velocity of a body. These signals are measured in deg/sec.
+- The body acceleration and angular velocity were used to derive **Jerk** signals.
 - The **Magnitude** value of certain signals was also calculated by using the Euclidean norm.
 - **Frequency-domain** signals, as derived by applying a Fast Fourier Transformation, were generated for only some of the signals from Time-domain. These include Body acceleration, Body acceleration Magnitude, Body acceleration Jerk, Body acceleration Jerk Magnitude, Gyroscope Body and Gyroscope Body Jerk Magnitude signals.
 - Where applicable, the following functions to the aforementioned variables were applied to generate the final set of variables:
@@ -203,7 +203,7 @@ The following table explains the variables present in our data set while also ca
       <td>X; Y; Z</td>
       <td><p>This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable.</p> <p>It also has functions applied to it, which can be found before just before the values for any axes are appended. For example, tBodyAcc-mean()-X </p></td>
       <td>g (where 1 g = 9.8 m/s^2)</td>
-      <td><ul><li>mean() = Mean</li><li>std() = Standard Deviation</li><li>mad() = Median Absolute Deviation</li><li>max() = Maximum Value in an array</li><li>min() = Minimum Value in an array</li><li>energy() = Sum of squares divided by the number of values</li><li>iqr() = Inter-quartile range</li><li>entropy() = Signal entropy</li><li>arCoeff() = Autorregresion coefficients with Burg order equal to 4</li><li>correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes</li></ul></td>
+      <td font size = "6"><ul><li>mean() = Mean</li><li>std() = Standard Deviation</li><li>mad() = Median Absolute Deviation</li><li>max() = Maximum Value in an array</li><li>min() = Minimum Value in an array</li><li>energy() = Sum of squares divided by the number of values</li><li>iqr() = Inter-quartile range</li><li>entropy() = Signal entropy</li><li>arCoeff() = Autorregresion coefficients with Burg order equal to 4</li><li>correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes</li></ul></td>
     </tr>
   </tbody>
 </table>
