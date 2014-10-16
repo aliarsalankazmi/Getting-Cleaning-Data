@@ -175,9 +175,106 @@ The following table explains the variables present in our data set while also ca
 | 118   | fBodyAcc-entropy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
 | 119   | fBodyAcc-maxInds()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
 | 120   | fBodyAcc-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
-| 121   | fBodyAcc-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
-| 122   | fBodyAcc-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
-| 123   | fBodyAcc-bandsEnergy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
-
-
-
+| 121   | fBodyAcc-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Skewness of the signal  |
+| 122   | fBodyAcc-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Kurtosis of the signal  |
+| 123   | fBodyAcc-bandsEnergy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Energy of a frequency interval within the 64 bins of the FFT of each window.  |
+| 124   | fBodyAccJerk-mean()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 125   | fBodyAccJerk-std()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Standard Deviation  |
+| 126   | fBodyAccJerk-mad()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Median Absolute Deviation  |
+| 127   | fBodyAccJerk-max()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Maximum value in an array  |
+| 128   | fBodyAccJerk-min()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Minimum value in an array  |
+| 129   | fBodyAccJerk-sma()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal Magnitude Area  |
+| 130   | fBodyAccJerk-energy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Sum of squares divided by the number of values  |
+| 131   | fBodyAccJerk-iqr()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Inter-quartile range  |
+| 132   | fBodyAccJerk-entropy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
+| 133   | fBodyAccJerk-maxInds()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
+| 134   | fBodyAccJerk-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 135   | fBodyAccJerk-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Skewness of the signal  |
+| 136   | fBodyAccJerk-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Kurtosis of the signal  |
+| 137   | fBodyAccJerk-bandsEnergy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Energy of a frequency interval within the 64 bins of the FFT of each window.  |
+| 138   | fBodyGyro-mean()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 139   | fBodyGyro-std()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Standard Deviation  |
+| 140   | fBodyGyro-mad()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Median Absolute Deviation  |
+| 141   | fBodyGyro-max()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Maximum value in an array  |
+| 142   | fBodyGyro-min()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Minimum value in an array  |
+| 143   | fBodyGyro-sma()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Signal Magnitude Area  |
+| 144   | fBodyGyro-energy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Sum of squares divided by the number of values  |
+| 145   | fBodyGyro-iqr()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Inter-quartile range  |
+| 146   | fBodyGyro-entropy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Signal entropy  |
+| 147   | fBodyGyro-maxInds()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Index of the frequency component with the largest magnitude  |
+| 148   | fBodyGyro-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 149   | fBodyGyro-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Skewness of the signal  |
+| 150   | fBodyGyro-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal from the gyroscope  |   | Kurtosis of the signal  |
+| 151   | fBodyGyro-bandsEnergy()   | Frequency; Acceleration | 1-64 bins   | This is a frequency-domain signal from the gyroscope  |   | Energy of a frequency interval within the 64 bins of the FFT of each window.  |
+| 152   | fBodyAccMag-mean()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 153   | fBodyAccMag-std()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Standard Deviation  |
+| 154   | fBodyAccMag-mad()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Median Absolute Deviation  |
+| 155   | fBodyAccMag-max()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Maximum value in an array  |
+| 156   | fBodyAccMag-min()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Minimum value in an array  |
+| 157   | fBodyAccMag-sma()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal Magnitude Area  |
+| 158   | fBodyAccMag-energy()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Sum of squares divided by the number of values  |
+| 159   | fBodyAccMag-iqr()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Inter-quartile range  |
+| 160   | fBodyAccMag-entropy()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
+| 161   | fBodyAccMag-maxInds()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
+| 162   | fBodyAccMag-meanFreq()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 163   | fBodyAccMag-skewness()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Skewness of the signal  |
+| 164   | fBodyAccMag-kurtosis()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Kurtosis of the signal  |
+| 165   | fBodyBodyAccJerkMag-mean()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 166   | fBodyBodyAccJerkMag-std()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Standard Deviation  |
+| 167   | fBodyBodyAccJerkMag-mad()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Median Absolute Deviation  |
+| 168   | fBodyBodyAccJerkMag-max()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Maximum value in an array  |
+| 169   | fBodyBodyAccJerkMag-min()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Minimum value in an array  |
+| 170   | fBodyBodyAccJerkMag-sma()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal Magnitude Area  |
+| 171   | fBodyBodyAccJerkMag-energy()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Sum of squares divided by the number of values  |
+| 172   | fBodyBodyAccJerkMag-iqr()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Inter-quartile range  |
+| 173   | fBodyBodyAccJerkMag-entropy()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
+| 174   | fBodyBodyAccJerkMag-maxInds()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
+| 175   | fBodyBodyAccJerkMag-meanFreq()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 176   | fBodyBodyAccJerkMag-skewness()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Skewness of the signal  |
+| 177   | fBodyBodyAccJerkMag-kurtosis()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Kurtosis of the signal  |
+| 178   | fBodyBodyGyroMag-mean()   | Frequency; Acceleration | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 179   | fBodyBodyGyroMag-std()   | Frequency  | NA   | This is a frequency-domain signal from the gyroscope  |   | Standard Deviation  |
+| 180   | fBodyBodyGyroMag-mad()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Median Absolute Deviation  |
+| 181   | fBodyBodyGyroMag-max()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Maximum value in an array  |
+| 182   | fBodyBodyGyroMag-min()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Minimum value in an array  |
+| 183   | fBodyBodyGyroMag-sma()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal Magnitude Area  |
+| 184   | fBodyBodyGyroMag-energy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Sum of squares divided by the number of values  |
+| 185   | fBodyBodyGyroMag-iqr()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Inter-quartile range  |
+| 186   | fBodyBodyGyroMag-entropy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal entropy  |
+| 187   | fBodyBodyGyroMag-maxInds()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Index of the frequency component with the largest magnitude  |
+| 188   | fBodyBodyGyroMag-meanFreq()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 189   | fBodyBodyGyroMag-skewness()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Skewness of the signal  |
+| 190   | fBodyBodyGyroMag-kurtosis()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Kurtosis of the signal  |
+| 178   | fBodyBodyGyroMag-mean()   | Frequency | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 179   | fBodyBodyGyroMag-std()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Standard Deviation  |
+| 180   | fBodyBodyGyroMag-mad()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Median Absolute Deviation  |
+| 181   | fBodyBodyGyroMag-max()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Maximum value in an array  |
+| 182   | fBodyBodyGyroMag-min()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Minimum value in an array  |
+| 183   | fBodyBodyGyroMag-sma()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal Magnitude Area  |
+| 184   | fBodyBodyGyroMag-energy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Sum of squares divided by the number of values  |
+| 185   | fBodyBodyGyroMag-iqr()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Inter-quartile range  |
+| 186   | fBodyBodyGyroMag-entropy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal entropy  |
+| 187   | fBodyBodyGyroMag-maxInds()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Index of the frequency component with the largest magnitude  |
+| 188   | fBodyBodyGyroMag-meanFreq()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 189   | fBodyBodyGyroMag-skewness()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Skewness of the signal  |
+| 190   | fBodyBodyGyroMag-kurtosis()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Kurtosis of the signal  |
+| 191   | fBodyBodyGyroJerkMag-mean()   | Frequency | NA   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 192   | fBodyBodyGyroJerkMag-std()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Standard Deviation  |
+| 193   | fBodyBodyGyroJerkMag-mad()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Median Absolute Deviation  |
+| 194   | fBodyBodyGyroJerkMag-max()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Maximum value in an array  |
+| 195   | fBodyBodyGyroJerkMag-min()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Minimum value in an array  |
+| 196   | fBodyBodyGyroJerkMag-sma()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal Magnitude Area  |
+| 197   | fBodyBodyGyroJerkMag-energy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Sum of squares divided by the number of values  |
+| 198   | fBodyBodyGyroJerkMag-iqr()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Inter-quartile range  |
+| 199   | fBodyBodyGyroJerkMag-entropy()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Signal entropy  |
+| 200   | fBodyBodyGyroJerkMag-maxInds()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Index of the frequency component with the largest magnitude  |
+| 201   | fBodyBodyGyroJerkMag-meanFreq()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
+| 202   | fBodyBodyGyroJerkMag-skewness()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Skewness of the signal  |
+| 203   | fBodyBodyGyroJerkMag-kurtosis()   | Frequency | NA   | This is a frequency-domain signal from the gyroscope  |   | Kurtosis of the signal  |
+|angle(tBodyAccMean, gravity) | Time; Acceleration | NA | The signals for body acceleration and gravity acceleration are averged and then used. |  | Angle
+|angle(tBodyAccJerkMean, gravityMean) |
+|angle(tBodyGyroMean, gravity) |
+|angle(tBodyGyroJerkMean, gravityMean) |
+|angle(X, gravityMean) |
+|angle(Y, gravityMean) |
+|angle(Z, gravityMean) |
