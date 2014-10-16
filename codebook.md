@@ -184,6 +184,18 @@ The following table explains the variables present in our data set while also ca
 |---------------|-----------------|-------------------|----------------------|------------------|---------------------|
 | Subjects      | NA              | NA                | Each participant is referred to as a Subject, 30 in total | NA | NA |
 | Activity      | NA              | NA                | Each of the 6 activities is recorded here, using a numeric value (from 1 - 6) | NA | NA |
+| tBodyAcc      | Time-domain; Acceleration | X; Y; Z | This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable. 
+It also has functions applied to it, which can be found before just before the values for any axes are appended. 
+For example, tBodyAcc-mean()-X | g (where 1g = 9.8 m/s^2) | mean() = Mean
+std() = Standard Deviation
+mad() = Median Absolute Deviation
+max() = Maximum Value in an array
+min() = Minimum Value in an array
+energy() = Sum of squares divided by the number of values
+iqr() = Inter-quartile range
+entropy() = Signal entropy
+arCoeff() = Autorregresion coefficients with Burg order equal to 4
+correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes |
 
 
 
