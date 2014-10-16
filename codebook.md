@@ -34,7 +34,7 @@ The flow diagram above tries to represent the data set as a hierarchical structu
 - The body acceleration and angular velocity were used to generate **Jerk** signals.
 - The **Magnitude** value of certain signals was also calculated by using the Euclidean norm.
 - **Frequency-domain** signals, as derived by applying a Fast Fourier Transformation, were generated for only some of the signals from Time-domain. These include Body acceleration, Body acceleration Magnitude, Body acceleration Jerk, Body acceleration Jerk Magnitude, Gyroscope Body and Gyroscope Body Jerk Magnitude signals.
-- Where applicable, the following values for the aforementioned variables were calculated to generate the final variable set:
+- Where applicable, the following functions to the aforementioned variables were applied to generate the final set of variables:
     - Mean
     - Std: Standard Deviation
     - Median Absolute Deviation
@@ -144,16 +144,48 @@ The following table explains the variables present in our data set while also ca
 | 87      | tBodyAccJerkMag-iqr() | Time; Acceleration; Body | NA          | This is a Time-domain, Body acceleration Jerk signal | g (1g = 9.8 m/s^2) | Inter-quartile range |
 | 88      | tBodyAccJerkMag-entropy() | Time; Acceleration; Body | NA          | This is a Time-domain, Body acceleration Jerk signal | g (1g = 9.8 m/s^2) | The inter-quartile range |
 | 89      | tBodyAccJerkMag-arCoeff() | Time; Acceleration; Body | NA          | This is a Time-domain, Body acceleration Jerk signal | g (1g = 9.8 m/s^2) | Auto-regression coefficients with Burg order = 4 |
-| 90    | tBodyGyroMag-mean()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Mean |
-| 91    | tBodyGyroMag-std()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Standard Deviation |
-| 92    | tBodyGyroMag-mad()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Median Absolute Deviation |
-| 93    | tBodyGyroMag-max()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Maximum value in an array |
-| 94    | tBodyGyroMag-min()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Minimum value in an array |
+| 90    | tBodyGyroMag-mean()    | Time  | NA   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Mean |
+| 91    | tBodyGyroMag-std()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Standard Deviation |
+| 92    | tBodyGyroMag-mad()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Median Absolute Deviation |
+| 93    | tBodyGyroMag-max()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Maximum value in an array |
+| 94    | tBodyGyroMag-min()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Minimum value in an array |
 | 95    | tBodyGyroMag-sma()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Signal Magnitude Area |
-| 96    | tBodyGyroMag-energy()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Energy (Sum of squares divided by number of values) |
-| 97    | tBodyGyroMag-iqr()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Inter-quartile range |
-| 98    | tBodyGyro-entropy()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Signal Entropy |
-| 99    | tBodyGyro-arCoeff()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Autorregresion coefficients with Burg order equal to 4 |
-| 100    | tBodyGyro-correlation()    | Time  | X; Y; Z   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Correlation coefficient as obtained by correlating values from each of the axes to others (e.g. X with Y, X with Z, and so on) |
+| 96    | tBodyGyroMag-energy()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Energy (Sum of squares divided by number of values) |
+| 97    | tBodyGyroMag-iqr()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Inter-quartile range |
+| 98    | tBodyGyroMag-entropy()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Signal Entropy |
+| 99    | tBodyGyroMag-arCoeff()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Autorregresion coefficients with Burg order equal to 4 |
+| 100    | tBodyGyroJerkMag-mean()    | Time  | NA   | This is a time-domain signal from gyroscope, recorded for each of the 3 axes. The axis name for which the signal has been recorded is appended to the end of the variable name in our data set. | deg/sec | Mean |
+| 101    | tBodyGyroJerkMag-std()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Standard Deviation |
+| 102    | tBodyGyroJerkMag-mad()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Median Absolute Deviation |
+| 103    | tBodyGyroJerkMag-max()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Maximum value in an array |
+| 104    | tBodyGyroJerkMag-min()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Minimum value in an array |
+| 105    | tBodyGyroJerkMag-sma()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Signal Magnitude Area |
+| 106    | tBodyGyroJerkMag-energy()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Energy (Sum of squares divided by number of values) |
+| 107    | tBodyGyroJerkMag-iqr()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Inter-quartile range |
+| 108    | tBodyGyroJerkMag-entropy()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Signal Entropy |
+| 109    | tBodyGyroJerkMag-arCoeff()    | Time  | NA   | This is a time-domain signal from gyroscope | deg/sec | Autorregresion coefficients with Burg order equal to 4 |
+| 110   | fBodyAcc-mean()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 111   | fBodyAcc-std()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Standard Deviation  |
+| 112   | fBodyAcc-mad()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Median Absolute Deviation  |
+| 113   | fBodyAcc-max()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Maximum value in an array  |
+| 114   | fBodyAcc-min()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Minimum value in an array  |
+| 115   | fBodyAcc-sma()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal Magnitude Area  |
+| 116   | fBodyAcc-energy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Sum of squares divided by the number of values  |
+| 117   | fBodyAcc-iqr()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Inter-quartile range  |
+| 118   | fBodyAcc-entropy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
+| 119   | fBodyAcc-maxInds()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
+| 120   | fBodyAcc-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 121   | fBodyAcc-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 122   | fBodyAcc-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 123   | fBodyAcc-bandsEnergy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+
+
+| Variable Name | Parent Category | Child variable(s) | Variable Description | Measurement Unit | Function(s) Applied |
+|---------------|-----------------|-------------------|----------------------|------------------|---------------------|
+| Subjects      | NA              | NA                | Each participant is referred to as a Subject, 30 in total | NA | NA |
+| Activity      | NA              | NA                | Each of the 6 activities is recorded here, using a numeric value (from 1 - 6) | NA | NA |
+
+
+
 
 
