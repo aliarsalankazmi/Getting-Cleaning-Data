@@ -190,34 +190,20 @@ The following table explains the variables present in our data set while also ca
 <table>
   <tbody>
     <tr>
-      <th>Tables</th>
-      <th align="center">Are</th>
-      <th align="right">Cool</th>
+      <th>Variable Name</th>
+      <th align="center">Parent Category</th>
+      <th align="right">Child Variable(s)</th>
+      <th Variable Description</th>
+      <th Measurement Unit</th>
+      <th Function(s) Applied</th>
     </tr>
     <tr>
-      <td>col 3 is</td>
-      <td align="center"><p>This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable.</p> <p>It also has functions applied to it, which can be found before just before the values for any axes are appended. For example, tBodyAcc-mean()-X </p></td>
-      <td align="right">$1600</td>
-    </tr>
-    <tr>
-      <td>col 2 is</td>
-      <td align="center">centered</td>
-      <td align="right">$12</td>
-    </tr>
-    <tr>
-      <td>zebra stripes</td>
-      <td align="center">are neat</td>
-      <td align="right">$1</td>
-    </tr>
-    <tr>
-      <td>
-        <ul>
-          <li>item1</li>
-          <li>item2</li>
-        </ul>
-      </td>
-      <td align="center">See the list</td>
-      <td align="right">from the first collum</td>
+      <td>tBodyAcc</td>
+      <td>Time domain; Acceleration</td>
+      <td>X; Y; Z</td>
+      <td><p>This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable.</p> <p>It also has functions applied to it, which can be found before just before the values for any axes are appended. For example, tBodyAcc-mean()-X </p></td>
+      <td>g (where 1 g = 9.8 m/s^2)</td>
+      <td><ul><li>mean() = Mean</li><li>std() = Standard Deviation</li><li>mad() = Median Absolute Deviation</li><li>max() = Maximum Value in an array</li><li>min() = Minimum Value in an array</li><li>energy() = Sum of squares divided by the number of values</li><li>iqr() = Inter-quartile range</li><li>entropy() = Signal entropy</li><li>arCoeff() = Autorregresion coefficients with Burg order equal to 4</li><li>correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes</li></ul></td>
     </tr>
   </tbody>
 </table>
