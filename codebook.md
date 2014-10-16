@@ -174,38 +174,10 @@ The following table explains the variables present in our data set while also ca
 | 117   | fBodyAcc-iqr()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Inter-quartile range  |
 | 118   | fBodyAcc-entropy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Signal entropy  |
 | 119   | fBodyAcc-maxInds()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Index of the frequency component with the largest magnitude  |
-| 120   | fBodyAcc-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
+| 120   | fBodyAcc-meanFreq()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | meanFreq() = Weighted average of the frequency components to obtain a mean frequency  |
 | 121   | fBodyAcc-skewness()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
 | 122   | fBodyAcc-kurtosis()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
 | 123   | fBodyAcc-bandsEnergy()   | Frequency; Acceleration | X; Y; Z   | This is a frequency-domain signal for body acceleration from the accelerometer  |   | Mean  |
 
-
-| Variable Name | Parent Category | Child variable(s) | Variable Description | Measurement Unit | Function(s) Applied |
-|---------------|-----------------|-------------------|----------------------|------------------|---------------------|
-| Subjects      | NA              | NA                | Each participant is referred to as a Subject, 30 in total | NA | NA |
-| Activity      | NA              | NA                | Each of the 6 activities is recorded here, using a numeric value (from 1 - 6) | NA | NA |
-| tBodyAcc      | Time-domain; Acceleration | X; Y; Z | <p>This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable.</p> <p>It also has functions applied to it, which can be found before just before the values for any axes are appended. For example, tBodyAcc-mean()-X </p>| g (where 1g = 9.8 m/s^2) | <ul><li>mean() = Mean</li><li>std() = Standard Deviation</li><li>mad() = Median Absolute Deviation</li><li>max() = Maximum Value in an array</li><li>min() = Minimum Value in an array</li><li>energy() = Sum of squares divided by the number of values</li><li>iqr() = Inter-quartile range</li><li>entropy() = Signal entropy</li><li>arCoeff() = Autorregresion coefficients with Burg order equal to 4</li><li>correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes</li></ul>  |
-
-
-<table>
-  <tbody>
-    <tr>
-      <th>Variable Name</th>
-      <th align="center">Parent Category</th>
-      <th align="right">Child Variable(s)</th>
-      <th Variable Description</th>
-      <th Measurement Unit</th>
-      <th Function(s) Applied</th>
-    </tr>
-    <tr>
-      <td>tBodyAcc</td>
-      <td>Time domain; Acceleration</td>
-      <td>X; Y; Z</td>
-      <td><p>This is a Time-domain, Body acceleration signal from each of the three axes - X-axis, Y-axis, or Z-axis. Whether such a variable records signal on X or Y-axis can be identified by the name of axis appended at the end of this variable.</p> <p>It also has functions applied to it, which can be found before just before the values for any axes are appended. For example, tBodyAcc-mean()-X </p></td>
-      <td>g (where 1 g = 9.8 m/s^2)</td>
-      <td font size = "6"><ul><li>mean() = Mean</li><li>std() = Standard Deviation</li><li>mad() = Median Absolute Deviation</li><li>max() = Maximum Value in an array</li><li>min() = Minimum Value in an array</li><li>energy() = Sum of squares divided by the number of values</li><li>iqr() = Inter-quartile range</li><li>entropy() = Signal entropy</li><li>arCoeff() = Autorregresion coefficients with Burg order equal to 4</li><li>correlation() = Correlation coefficient as found by calculating correlation between signals from any 2 axes</li></ul></td>
-    </tr>
-  </tbody>
-</table>
 
 
