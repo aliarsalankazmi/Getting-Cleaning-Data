@@ -269,6 +269,7 @@ For example, entering ```tBodyAcc-mean()``` and **not** ```tBodyAcc-mean()-X```.
 |205    | angle(tBodyAccJerkMean, gravityMean) | Accelerometer/Time-domain | NA | This variable is the angle between the mean of Body acceleration Jerk signal, and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
 |206    | angle(tBodyGyroMean, gravity) | Gyroscope/Time-domain | NA | This variable is the angle between the mean of Body orientation signal, and the Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
 |207    | angle(tBodyGyroJerkMean, gravityMean) | Gyroscope/Time-domain | NA | This variable is the angle between the mean of Body orientation Jerk signal, and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
-|208    | angle(X, gravityMean) | Accelerometer | NA | This variable is the angle between the X axis and the mean of Gravity | ?? | -1 to 1 | Angle between two vectors | 0 |
-|209    | angle(Y, gravityMean) | Accelerometer | NA | This variable is the angle between the Y axis and the mean of Gravity | ?? | -1 to 1 | Angle between two vectors | 0 |
-|210    | angle(Z, gravityMean) | Accelerometer | NA | This variable is the angle between the Z axis and the mean of Gravity | ?? | -1 to 1 | Angle between two vectors | 0 |
+|208    | angle(X, gravityMean) | Accelerometer | NA | This variable is the angle between the X axis and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
+|209    | angle(Y, gravityMean) | Accelerometer | NA | This variable is the angle between the Y axis and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
+|210    | angle(Z, gravityMean) | Accelerometer | NA | This variable is the angle between the Z axis and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
+
