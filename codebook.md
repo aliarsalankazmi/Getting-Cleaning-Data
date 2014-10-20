@@ -1,5 +1,11 @@
 Codebook
-====================================================
+=====================================================================================================
+
+## Table of Contents ##
+[Data set Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#data-set-description)
+[Variable Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description)
+[Variable Generation Process](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process)
+[Table of Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#table-of-variables)
 
 ## Data set Description ##
 
