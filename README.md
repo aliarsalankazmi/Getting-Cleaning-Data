@@ -6,7 +6,7 @@ This Instructions' file outlines the primary sections of this project, which was
 In what follows, first a brief description of the project is given, and this is followed by a step-by-step procedure that guides users on how to accomplish each component of the project.
 
 
-## Purpose of this project ##
+## Purpose of this Project ##
 
 The purpose of this project is to extract data pertaining to Human activities as captured via smartphones, and to manipulate and tidy this data in order to formulate the data in a shape that is amenable to any downstream analysis.
 
@@ -15,7 +15,7 @@ The purpose of this project is to extract data pertaining to Human activities as
 The image above depicts how this project was structured - which steps were carried out in sequential order to accomplish the project.   
 In the following sections, a description of these steps has been provided, along with links to necessary files that complement each step.
 
-## Step-by-step guide to project ##
+## Step-by-step Guide to Project ##
 
 ### 1. Downloading Required Data ###
 
