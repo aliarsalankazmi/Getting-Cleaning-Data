@@ -6,6 +6,7 @@ Codebook
 [Variable Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description)  
 [Variable Generation Process](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process)  
 [Table of Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#table-of-variables)
+[Note on Tidied Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#note-on-tidied-data-variables)
 
 ## Data set Description ##
 
@@ -286,10 +287,10 @@ For example, entering ```tBodyAcc-mean()``` and **not** ```tBodyAcc-mean()-X```.
 While the above Table for Variables describes all of the variables originally present in our data set, the tidied data set achieved after running the [run_analysis script](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/run_analysis.R) adopts a different naming scheme. This is done to make variable names easier to understand.  
 The naming scheme employed to rename our variables takes inspiration from the [Variable Generation Process diagram](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process), enabling us to rename variables in the following manner:
 
-[SignalType]-[SignalSpecification]-[Axis]-[Function] 
+*[SignalType]-[SignalSpecification]-[Axis]-[Function]* 
 
 which, when replaced with values instead of placeholders, becomes 
 
-Time-AccelBody-X-Mean
+*Time-AccelBody-X-Mean*
 
 This tranlsates to indicate that a variable records Time-domain signal for Body acceleration, using the X axis, with mean calculated on the signal.
