@@ -5,7 +5,7 @@ Codebook
 [Data set Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#data-set-description)  
 [Variable Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description)  
 [Variable Generation Process](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process)  
-[Table of Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#table-of-variables)
+[Table of Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#table-of-variables)  
 [Note on Tidied Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#note-on-tidied-data-variables)
 
 ## Data set Description ##
