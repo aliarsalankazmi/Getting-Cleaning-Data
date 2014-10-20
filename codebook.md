@@ -2,9 +2,9 @@ Codebook
 =====================================================================================================
 
 ## Table of Contents ##
-[Data set Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#data-set-description)
-[Variable Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description)
-[Variable Generation Process](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process)
+[Data set Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#data-set-description)  
+[Variable Description](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#variable-description)  
+[Variable Generation Process](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process)  
 [Table of Variables](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#table-of-variables)
 
 ## Data set Description ##
@@ -34,7 +34,7 @@ In the previous section, two devices were briefly covered (an accelerometer and 
 
 ![Data Overview](https://cloud.githubusercontent.com/assets/5294000/4641659/141d636e-543b-11e4-8aa5-123f58e981e1.PNG "Overview of Data set")
 
-The flow diagram above tries to represent the data set as a hierarchical structure, in order to facilitate understanding of it. To explain the variable generation process specifically:
+The Variable Generation Process diagram above tries to represent the data set as a hierarchical structure, in order to facilitate understanding of it. To explain the variable generation process specifically:
 
 1. Raw signals from an accelerometer and a gyroscope were generated,
 2. The raw signals were **Time-domain** signals (captured at a constant rate of 50 Hz), and to some of these signals a Fast Fourier Transformation was applied to generate **Frequency-domain** signals,
@@ -279,3 +279,17 @@ For example, entering ```tBodyAcc-mean()``` and **not** ```tBodyAcc-mean()-X```.
 |209    | angle(Y, gravityMean) | Accelerometer | NA | This variable is the angle between the Y axis and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
 |210    | angle(Z, gravityMean) | Accelerometer | NA | This variable is the angle between the Z axis and the mean of Gravity | Degrees | -1 to 1 | Angle between two vectors | 0 |
 
+---------------------------------------------------------------------------------------------------------------------------
+
+## Note on Tidied Data Variables ##
+
+While the above Table for Variables describes all of the variables originally present in our data set, the tidied data set achieved after running the [run_analysis script](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/run_analysis.R) adopts a different naming scheme. This is done to make variable names easier to understand.  
+The naming scheme employed to rename our variables takes inspiration from the [Variable Generation Process diagram](https://github.com/noobuseR/Getting-Cleaning-Data/blob/master/codebook.md#the-variable-generation-process), enabling us to rename variables in the following manner:
+
+[SignalType]-[SignalSpecification]-[Axis]-[Function] 
+
+which, when replaced with values instead of placeholders, becomes 
+
+Time-AccelBody-X-Mean
+
+This tranlsates to indicate that a variable records Time-domain signal for Body acceleration, using the X axis, with mean calculated on the signal.
